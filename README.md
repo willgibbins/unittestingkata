@@ -6,6 +6,10 @@ Inspired by the original String Calculator kata from
 
 The following is a TDD Kata- an exercise in coding, refactoring and test-first, that you should apply daily for at least 15 minutes (I do 30).
 
+The emphasis of this exercise is not only on TDD, but also mocking and good Object Oriented practices. For example, a class that parses text may not be the most appropriate place to perform arithmetic operations.
+
+The libraries included in this Maven project are: JUnit 4, Mockito, and Hamcrest.
+
 Before You Start
 ----------------
 
@@ -29,11 +33,14 @@ String Calculator
    1. to change a delimiter, the beginning of the string will contain a separate line that looks like this:   “//[delimiter]\n[numbers…]” for example “//;\n1;2” should return three where the default delimiter is ‘;’ .
    1. the first line is optional. all existing scenarios should still be supported
 1. Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed.if there are multiple negatives, show all of them in the exception message
----
-stop here if you are a beginner. Continue if you can finish the steps so far in less than 30 minutes.
----
-1. Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
-1. Delimiters can be of any length with the following format:  “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
-1. Allow multiple delimiters like this:  “//[delim1][delim2]\n” for example “//[*][%]\n1*2%3” should return 6.
 
-1. make sure you can also handle multiple delimiters with length longer than one char
+***
+
+Stop here if you are a beginner. Continue if you can finish the steps so far in less than 30 minutes.
+
+***
+
+1. Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
+1. Delimiters can be of any length with the following format:  “//[delimiter]\n” for example: “//\[\*\*\*\]\n1\*\*\*2\*\*\*3” should return 6
+1. Allow multiple delimiters like this:  “//\[delim1\]\[delim2\]\n” for example “//\[\*\]\[%\]\n1\*2%3” should return 6.
+1. Make sure you can also handle multiple delimiters with length longer than one char

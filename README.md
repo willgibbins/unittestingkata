@@ -25,7 +25,9 @@ String Calculator
    2. Start with the simplest test case of an empty string and move to 1 and two numbers
    3. Remember to solve things as simply as possible so that you force yourself to write tests you did not think about
    4. Remember to refactor after each passing test
-1. Allow the Add method to handle an unknown amount of numbers
+   5. Testing and refactoring will be easier if you have multiple classes separated by concerns.  For instance, a class to handle parsing the input, and another to handle the actual arithmetic.
+   6. Testing is easier if, when testing one class, you only use mocks for any other classes.  For instance, in an arithmetic class, if you mock the input parser class, you can focus on just the arithmetic.
+1. Allow the Add method to handle an unknown amount of numbers.
 1. Allow the Add method to handle new lines between numbers (instead of commas).
    1. the following input is ok:  “1\n2,3”  (will equal 6)
    1. the following input is NOT ok:  “1,\n” (not need to prove it - just clarifying)

@@ -1,0 +1,98 @@
+Test Driven Development
+=======================
+
+by
+Will Gibbins
+<wgibbins@pillartechnology.com>
+
+and
+
+Clay Dowling
+<cdowling@pillartechnology.com>
+
+Unit Tests: why we do it
+------------------------
+![I Find Your Lack of Tests Disturbing](https://jfiaffe.files.wordpress.com/2015/06/lack-of-testing.jpg)
+
+???
+
+* Ensures the code does what we said it was going to do.
+* Documents the code.
+  * Comments become obsolete quickly
+  * Tests live
+* Should not require human intervention.
+
+Unit Tests: making quality tests
+--------------------------------
+
+![QA Approved](http://coavainc.com/wp-content/uploads/2015/07/quality.jpg)
+
+???
+
+* Consistent, no spurious failures
+  * Fragility is bad
+  * Integration tests are an example of fragile.  Shouldn't be primary tool.
+* A single logical assert per unit test.
+
+Unit Tests: naming
+------------------
+* method_conditions_result
+* testMethodExpectedAction
+
+???
+
+* Should be named for intention and expectations. SELF DOCUMENTING.
+* Use a naming pattern to improve readability.
+* A pattern reduces the amount of time you waste thinking about what to test.
+
+
+Test Driven Development
+-----------------------
+
+[Test Driven Development](https://www.youtube.com/watch?v=dqco5WPK70g)
+
+TDD: never trust the code
+-------------------------
+
+![TDD](http://francesbagual.net/lt/dzslides/presentations/xp/imgs/gulty_code2.jpg)
+
+TDD: What Is It
+---------------
+
+???
+* Unit Test written before the code to define functionality
+* Defines "DONE" when tests for the feature are all passing.
+
+TDD: Advantages
+---------------
+???
+
+* Prevents "Gold Plating"
+* Allows you to quickly work in new languages and technology
+* Produces cleaner, more testable code.
+
+
+TDD: How To Do It
+-----------------
+???
+* Test the smallest thing possible. Reduces fragility (See Mocking)
+* Only write one test at a time. Stay focused on the immediate.
+* Focus on class behavior
+* Don't test implementation
+* Write only enough code to pass the test, no more.
+
+TDD
+---
+
+* Breaks down complex problems into small discrete steps.  A test should be focused minimalistically.
+
+
+Refactoring
+-----------
+The Red Green Refactor Cycle
+
+![Carpe Ductum](http://indianapublicmedia.org/about/files/2010/08/red_green.jpg)
+
+Pairing
+-------
+[Crappy Code Club](https://www.youtube.com/watch?v=0639R00kqII)
